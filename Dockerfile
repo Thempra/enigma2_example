@@ -1,6 +1,6 @@
 FROM technic93/e2xvfb:latest
 
-RUN apt-get install -y bash-completion command-not-found psmisc htop vim
+RUN apt-get update && apt-get install -y bash-completion command-not-found psmisc htop vim
 
 RUN pip install ptvsd
 EXPOSE 5678
